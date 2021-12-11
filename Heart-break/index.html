@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show me heart break</title>
+    <style>
+        body{
+            background: linear-gradient(to right, Black, gray);
+        }
+        main{
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .heart{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        #img1{
+            height: 200px;
+            width: auto;
+            display: block;
+        }
+        #img2{
+            height: 170px;
+            display: none;
+        }
+        span{
+            text-align: center;
+            background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 6, 222));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><span>You have my HEART, Break it, Fix it, Choice is yours</span> 🙃</h2>
+    </header>
+    <main>
+        <div class="heart">
+            <img src="heart.png" alt="" id="img1">
+        </div>
+        <div class="heartbreak">
+            <img src="heartbreak.png" alt="" id="img2">
+        </div>
+    </main>
+
+    <script>
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+
+        img1.addEventListener("click", ()=>{
+                img1.style.display = "none"
+                img2.style.display = "block"
+        })
+
+        img2.addEventListener("click", ()=>{
+                img1.style.display = "block"
+                img2.style.display = "none"
+        })
+    </script>
+</body>
+</html>

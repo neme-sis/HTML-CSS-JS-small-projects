@@ -1,0 +1,58 @@
+.parent{
+    border: 2px solid #000000;
+    max-height: 400px;
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background: linear-gradient(to right, cyan, rgb(255, 238, 0)) ;
+}
+.text{
+    min-height: 60px;
+    height: 15%;
+    background-color: rgb(231, 231, 231);
+    overflow-x:scroll; 
+}
+.operations{
+    padding-top: 10px;
+}
+.row{
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+}
+.operand, .operandl{
+    height: 30px;
+    background: linear-gradient(45deg, green, rgb(255, 38, 38));
+    font-size: 1.5em;
+    text-align: center;
+}
+.row5{
+    display: grid;
+    grid-template-columns: 25% 25% 40%;
+}
+.operand{
+    width: 24%;
+}
+.equal{
+    font-weight: 900;
+    font-size: 1.75em;
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 38, 38) 80%);;
+}
+.text{
+    font-size: 2em;
+    text-align: end;
+    color: black;
+}
+.operand:hover, .operandl:hover{
+    background: linear-gradient(to right, blue, white) ;
+}
+#note{
+    font-family:monospace ;
+    font-size: 12px;
+    font-weight: 900;
+}
+h2{
+    color: cadetblue;
+    text-align: center;
+}
