@@ -52,8 +52,8 @@ body{
     align-self: center;
 }
 .hr, .min, .sec{
-    height: 400px;
-    width: 300px;
+    height: 80%;
+    width: 60%;
     background-color: transparent;
     position: absolute;
     display: flex;
@@ -92,4 +92,10 @@ body{
     transform: translateY(-50%);
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
+}
+@media screen and (max-width: 450px) {
+    .clock{
+        height: 250px;
+        width: 250px;
+    }
 }
