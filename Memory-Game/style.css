@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+.score{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: 2px dashed gray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    background-image: url('https://images.indianexpress.com/2021/11/cricket-bat-ball.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 2px 2px 5px;
+    transition: all 500ms;
+    margin: 10px;
+}
+.card1{
+    background-image: url('./assets/angular.png');
+}
+.card2{
+    background-image: url(./assets/vue.jpeg);
+}
+.card3{
+    background-image: url(./assets/dart.png);
+}
+.card4{
+    background-image: url(./assets/flask.png);
+}
+.card5{
+    background-image: url(./assets/go.png);
+}
+.card6{
+    background-image: url(./assets/node.png);
+}
+.card7{
+    background-image: url(./assets/react.png);
+}
+.card8{
+    background-image: url(./assets/rust.png);
+}
+.flip{
+    background-image: none;
+    transform: rotateY(-180deg);
+    background-color: black;
+}
+.flip::before{
+    content: 'Flip It';
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotatey(180deg);  
+}
+.modal{
+    height: 300px;
+    width: 50%;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: black 1px 1px;
+    text-align: center;
+    box-shadow: 5px 5px 50px black;
+    border-radius: 20%;
+    display: none;
+    color: black;
+    padding-top: 40px;
+}
+h5{
+    color: green;
+    margin-top: 30px;
+}
+
+i{
+    color: rgb(0, 132, 255);
+}
