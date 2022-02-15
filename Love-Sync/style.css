@@ -1,9 +1,14 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
 .parent{
     max-width: 500px;
     width: 100%;
     margin: auto;
     padding: 50px;
     background-color: pink;
+    box-shadow: 10px 10px 35px red;
 }
 input,label{
     font-size: 1.25em;
@@ -37,10 +42,19 @@ section{
     font-weight: bold;
     font-size: 1em;
     text-align: center;
+    /* padding-top: 50%; */
+    display: flex;
+    align-items: center
 }
 #note{
     font-family:monospace ;
     font-size: 15px;
     font-weight: 900;
     color: red;
+    text-shadow: 1px 1px red;
+    text-align: center;
+    quotes: "“ " " ”";
+}
+h3{
+    margin-bottom: 20px;
 }
