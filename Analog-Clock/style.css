@@ -63,7 +63,7 @@ body{
 .hr::before{
     content: '';
     height: 40%;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: gray;
     width: 10px;
     z-index: 5;
     align-self: center;
