@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(-45deg,purple,blue);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    width: 40%;
+    border-radius: 50px;
+    background-color: rgb(207, 207, 207);
+}
+input{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(207, 207, 207);
+    border: 1px #000 solid;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+.inpt{
+    position: relative;
+    width: 100%;
+}
+label{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 20%;
+    left: -.5rem;
+    background-color: rgb(207, 207, 207);
+    transition: 500ms;
+}
+input:focus + label{
+    font-size: 1.25rem;
+    top: -1.15em;
+    left: 0px;
+    background-color: transparent;
+}
+button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.result{
+    text-align: center;
+    margin-top: 20px;
+}
+span{
+    font-size: 1rem;
+    float: left;
+    font-weight: 900;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5{
+    margin-top: 20px;
+}
+h3{
+    color: rgb(131, 131, 0);
+    margin-top: 20px;
+}
+h6{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
